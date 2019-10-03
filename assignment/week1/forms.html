@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <title> Demo form </title>
+</head>
+
+<body>
+    <h2>Sample form </h2>
+    <form action="" method="GET">
+
+        <p> Login Form</p>
+        <label>Username</label>
+        <input type="text" required placeholder=" Enter Username..." />
+        <br />
+        <div class="form-size">
+            <label>Password</label>
+            <input type="password" required />
+            <br />
+        </div>
+        <label>Email</label>
+        <input type="email" required />
+        <br />
+
+        <label>Select Plan </label>
+
+        <select>
+            <option>Platinum</option>
+            <option> Silver</option>
+            <option>Gold</option>
+        </select>
+
+        <label>Age</label>
+        <input type="number" required min="13" max="99" />
+        <br />
+
+        <input type="radio" name="gender" />Male
+        <input type="radio" name="gender" />Female
+        <br />
+
+        <button type="submit" class='btn'>Login</button>
+    </form>
+</body>
+
+</html>
