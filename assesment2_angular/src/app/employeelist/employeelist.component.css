@@ -1,0 +1,12 @@
+.container{
+    background-color: aqua;
+}
+
+thead{
+    background-color: orchid;
+}
+
+tr :hover{
+    background-color: blue;
+    color: aliceblue;
+}

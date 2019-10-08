@@ -1,0 +1,19 @@
+<div class="container">
+        <table class="table table-hover table-responsive table-secondary">
+          <thead>
+            <tr>
+              <th>ID</th><th>NAME</th><th>GENDER</th><th>SALARY</th><th>DOB</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let emp of emplist" class="change">
+              <td>{{emp.id}}</td>
+              <td>{{emp.name |titlecase}}</td>
+              <td>{{emp.gender | titlecase}}</td>
+              <td>{{emp.salary }}</td>
+              <td>{{emp.dob| date:'dd-MM-yyyy'}}</td>
+            </tr>
+          </tbody>
+        </table>
+        </div>
+        <!-- <p>{{employeelist|json}}</p> -->

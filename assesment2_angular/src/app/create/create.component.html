@@ -1,0 +1,30 @@
+<form #employeeForm="ngForm" (ngSubmit)="saveemp()">
+    <div class="panel panel-primary">
+            <br><br>
+            <div class="panel-heading">
+                <div class="panel-title">
+                    <h3>Employee Form</h3>
+                </div>
+            </div>
+            <div class="panel-body">
+            <div class="form-group">    
+            <label for="uid">USER ID:</label>
+            <input type="text" class="form-control" id="uid"
+            placeholder="Required and must be of length 5 to 12" name="uid" [(ng-model)]="emp.id"
+            >
+            </div>
+            <div class="form-group">
+            <label for="usr">Username:</label>
+            <input type="text" class="form-control" id="usr" placeholder="Required and Alphabets only" [(ngModel)]="employee.name">
+            </div><br>
+            <div class="form-group">
+            <label for="gender" title="Required" required>Gender:</label>
+            <input type="radio" name="gender" id="gender" value="male" [(ngModel)]="employee.gender">MALE
+            <input type="radio" name="gender" id="gender" value="female" [(ngModel)]="employee.gender">FEMALE<br>
+            </div>
+        </div>
+        <div class="panel-footer">
+        <button type="button" class="btn btn-primary btn-lg btn-block" >Submit</button>
+    </div>
+</div>
+</form>
